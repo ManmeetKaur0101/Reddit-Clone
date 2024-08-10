@@ -1,0 +1,200 @@
+nav {
+  display: flex;
+  flex-direction: column;
+  color: white;
+  align-items: top;
+  margin: 0 0.21vw 0 0;
+  height: 100%;
+  padding: 8vh 0.7vw 0 0.7vw;
+  border-right: 0.5px solid #3e4142;
+  position: fixed;
+  width: 17.5vw;
+  min-width: 250px;
+  background-color: #0e1113;
+  z-index: 9;
+  top: 0;
+  overflow-y: auto;
+}
+@media only screen and (max-width: 1250px) {
+  /* Adjust the max-width value as needed */
+  nav {
+      display: none;
+  }
+  
+}
+
+
+
+
+/* scrollbar */
+nav::-webkit-scrollbar {
+  width: 0.21vw; /* Width of the scrollbar */
+}
+
+nav::-webkit-scrollbar-track {
+  background: #0e1113; /* Background of the scrollbar track */
+}
+
+nav::-webkit-scrollbar-thumb {
+  background: #3e4142; /* Color of the scrollbar thumb */
+  border-radius: 10px; /* Rounded corners */
+}
+
+nav::-webkit-scrollbar-thumb:hover {
+  background: #181c1f; /* Color of the scrollbar thumb when hovered */
+}
+
+/* section 1 , section 2 lauout */
+.sec1,
+.sec2,
+.sec3 {
+  display: block;
+  padding: 0.2vh;
+  border-bottom: 0.5px solid #3e4142;
+}
+
+.sec1-content,
+.list-items,
+.list-head,
+.list-items-seemore {
+  display: flex;
+  align-items: center;
+  padding: 1vh;
+  margin: 0 0 1vh 0;
+  column-gap: 2vh;
+  border-radius: 0.8em;
+  height: 3em;
+  color: #dbe4db;
+}
+.list-items,
+.list-items-seemore {
+  margin: 0;
+  height: 3em;
+  color: #dbe4db;
+}
+.list-head {
+  justify-content: space-between;
+  flex-direction: row;
+  width: 100%;
+  color: #748791;
+}
+
+.sec2-content,
+.sec3-content {
+  display: flex;
+  flex-direction: column;
+  padding: 1vh;
+  margin: 0 0 1vh 0;
+  column-gap: 1vh;
+  border-radius: 0.8em;
+  border-radius: 0.8em;
+}
+.sec2-content .list-head p,
+.sec3-content .list-head p {
+  display: inline-flex;
+  flex: 3;
+  margin-left: 1vh;
+}
+.sec2-content .list-head img,
+.sec3-content .list-head img {
+  display: inline-flex;
+  flex: 1;
+  justify-self: end;
+  height: 2em;
+}
+.sec1-content:hover,
+.list-head:hover,
+.list-items:hover,
+.list-items-seemore:hover,
+.sub-sub-menu a:hover {
+  background-color: #181c1f;
+  cursor: pointer;
+}
+
+.sec1-content:active,
+.list-head:active {
+  background-color: #2a3236;
+}
+
+.sec1-content img {
+  flex: 1;
+  height: 1.5em;
+}
+.sec1-content p,
+.list-head p,
+.list-items p,
+.list-items-seemore p {
+  flex: 3;
+  font-size: 0.8em;
+}
+.dropdown-content {
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+}
+.drop-menu-layout {
+  justify-items: end;
+  margin-right: 1em;
+  height: 1.75em;
+}
+.dropdown-content div button {
+  font-size: x-small;
+  color: #dbe4db;
+  background-color: #0e1113;
+  border: none;
+  border-radius: 120px;
+  margin-left: 0.5vw;
+  padding: 1vh;
+}
+.dropdown-content div button:hover {
+  background-color: #333d42;
+}
+.list-icon {
+  height: 1.5em;
+}
+.sec3 .dropdown-content span {
+  border-bottom: 0.5px solid #3e4142;
+  width: 100%;
+  padding-bottom: 2vh;
+}
+.sec4 {
+  color: #3e4142;
+  font-size: xx-small;
+  justify-self:end;
+  margin: 2vh;
+  position:absolute;
+  bottom:0;
+  left:0;
+ 
+}
+.sub-sub-menu a {
+  color: #dbe4db;
+  text-decoration: none;
+  font-size: 0.8em;
+  display: flex;
+  flex-direction: column;
+  padding: 2vh;
+  column-gap: 1vh;
+  border-left: 0.5px solid #3e4142;
+}
+.sub-sub-menu{
+  margin: 2vh 1vw 1vh 2vw;
+}
+#topics-dropdown,
+#resource-dropdown,
+#internet-culture-dropdown,
+#games-dropdown,
+#QAs-dropdown,
+#technology-dropdown,
+#pop-dropdown,
+#Movies-dropdown,
+#seemore
+{
+  display: none;
+}
+
+
+.rotate {
+  transform: rotate(180deg);
+  transition: transform 0.3s;
+}

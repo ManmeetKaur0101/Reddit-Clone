@@ -1,0 +1,142 @@
+
+/* slider-------------------------------- */
+.card-item {
+  display: inline-block;
+  margin: 0.5vw;
+  border-radius: 30px;
+  position: relative;
+  height: 200px;
+  width:300px;
+ 
+}
+/* carousel */
+.card-list {
+ white-space:nowrap;
+  cursor: pointer;
+  overflow: hidden;
+  border-radius: 9%;
+  scroll-behavior: smooth;
+  
+}
+.card-list.dragging{
+  scroll-behavior: auto;
+  cursor: grab;
+}
+
+/* wrapper */
+.Slider-wrapper {
+  position: relative;
+  padding: 2vh 2vw;
+  width:100%;
+  margin: 0;
+ 
+}
+.Slider-wrapper button {
+  background-color: rgba(0, 0, 0, 0.4);
+  border-radius: 100%;
+  padding: 2px;
+  border: none;
+  height: 3rem;
+  width: 4em;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 10000000;
+}
+.Slider-wrapper button:first-child {
+  left: 15px;
+  display: none;
+}
+.Slider-wrapper button:last-child {
+  right: 15px;
+ 
+}
+.Slider-wrapper button:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+.card-item img {
+  height: 100%;
+  width: 100%;
+ 
+}
+.card-item img:first-child {
+  border-radius: 30px;
+}
+
+
+.card-item img {
+  z-index: 1;
+}
+.overlay1 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.616);
+  z-index: 2;
+  border-radius: 30px;
+    white-space:initial;
+}
+.overlay1:hover{
+  background-color:transparent;
+  z-index: 10000;
+}
+.overlay2 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+ margin: 0 0 20px 0;
+  z-index: 2;
+  white-space: initial;
+  padding: 0 0.3em;
+}
+.head1 {
+  font-size: 1em;
+  font-weight: bolder;
+  text-align: center;
+  display: block;
+  margin: 0;
+  color: white;
+  width: 100%;
+  
+  white-space:initial;
+}
+.card-item .overlay2 .head2 {
+  font-size: 0.9em;
+  font-weight: 50;
+  text-align: left;
+  display: block;
+  margin: 0;
+  color: white;
+  width: 100%;
+  
+  white-space:initial;
+  
+}
+.bottom-card {
+  display: flex;
+ 
+  column-gap: 0.3vw;
+  justify-items: center;
+  align-items: center;
+  z-index: 100;
+  width: 100%;
+  white-space:initial;
+}
+.bottom-card p {
+  font-weight: bold;
+  font-size: 0.8em;
+  color: white;
+  display: inline;
+}
+.bottom-card img {
+  border-radius: 100%;
+  height: 2em;
+  width: 2em;
+}
+.and-more {
+  color: #7ba2ad;
+  font-size: 0.7em;
+}

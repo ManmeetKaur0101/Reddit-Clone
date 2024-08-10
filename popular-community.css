@@ -1,0 +1,99 @@
+
+
+.feedndcommunity {
+  margin-right: 2vw;
+  display: flex;
+  flex-direction: row;
+  
+}
+.feed-container {
+ padding-top:0;
+  flex: 3;
+  height: fit-content;
+  
+}
+.community-relative-container {
+  flex: 1;
+  height: 1fr;
+  position: relative;
+  padding: 0 1vw 0 1vw;
+  
+}
+.popular-community-div {
+  position: sticky;
+  top: 10vh;
+  align-self: center;
+  justify-self: center;
+  background-color: black;
+  width: 100%;
+  border-radius: 7px;
+  overflow-y: auto;
+  max-height: 450px;
+}
+.popular-community-div h3 {
+  color: #89a0aa;
+  text-align: center;
+  padding-top: 1.5vh;
+  font-weight: 300;
+  font-size: 0.8em;
+}
+.entry {
+  display: flex;
+  flex-direction: row;
+  padding: 1vw;
+  column-gap: 0.5vw;
+  row-gap: 0;
+  justify-items: center;
+  align-items: center;
+}
+.entry p span {
+  display: block;
+}
+.entry img {
+  height: 2rem;
+  width: 2rem;
+  border-radius: 100%;
+}
+.p-name {
+  color: #b7cad4;
+  font-size: 0.9em;
+}
+.p-member {
+  color: #738690;
+  font-size: 0.7em;
+}
+.popular-community-div:-webkit-scrollbar-track {
+  background: #0e1113; /* Background of the scrollbar track */
+}
+
+.popular-community-div::-webkit-scrollbar {
+  width: 0.5vw; /* Width of the scrollbar */
+}
+
+.popular-community-div::-webkit-scrollbar-thumb {
+  background: #3e4142; /* Color of the scrollbar thumb */
+  border-radius: 10px; /* Rounded corners */
+}
+
+.popular-community-div::-webkit-scrollbar-thumb:hover {
+  background: #181c1f; /* Color of the scrollbar thumb when hovered */
+}
+
+#see-more-button-span {
+  font-size: x-small;
+  color: #dbe4db;
+  background-color:transparent;
+  border: none;
+  border-radius: 120px;
+  padding: 1vh;
+  display: block;
+  margin: 0.5vh 2vw;
+  height: 4em;
+  width: 5rem;
+}
+#see-more-button-span:hover {
+  background-color: #333d42;
+}
+#seeMore-span{
+  display:none;
+}

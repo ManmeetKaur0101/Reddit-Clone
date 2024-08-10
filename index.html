@@ -1,0 +1,1291 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>
+    Reddit Clone
+  </title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, height=device-height">
+
+  <link rel="stylesheet" href="Header.css">
+  <link rel="stylesheet" href="popular-community.css">
+  <link rel="stylesheet" href="Main-content.css">
+  <link rel="stylesheet" href="filter.css">
+
+  <link rel="stylesheet" href="slidebar.css">
+
+  <link rel="stylesheet" href="side-nav-style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.0.0/css/font-awesome.css"
+    integrity="sha512-72McA95q/YhjwmWFMGe8RI3aZIMCTJWPBbV8iQY3jy1z9+bi6+jHnERuNrDPo/WGYEzzNs4WdHNyyEr/yXJ9pA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+
+
+
+<body>
+  <!-- HEADER SECTION----------------------- -->
+  <header>
+    <div class="left-section">
+      <img src="assets/images/reddit-bg.svg">
+    </div>
+    <div class="left-section2">
+<img src="assets/icons/hamburger-menu.svg">
+      <img src="assets/images/reddit-sm.svg" id="sm-logo">
+    </div>
+    <div class="middle-section">
+      <div class="search-bar">
+        <span class="search-icon">
+          <i class="fa-solid fa-magnifying-glass" style="color:#b5c5cc;"></i>
+        </span>
+        <span class="input-content">
+          <input type="text" placeholder="Search Reddit" id="">
+        </span>
+        <span class="Clear-input">
+          <img src="assets/icons/close-round.svg">
+        </span>
+      </div>
+    </div>
+    </div>
+    <div class="right-section">
+      <button class="scanner-btn">
+        <img src="assets/icons/Scanner.svg">
+        <p>Get App</p>
+      </button>
+      <button class="search-btn-sm">
+        <i class="fa-solid fa-magnifying-glass" style="color:#b5c5cc;"></i>
+      </button>
+      <button class="login-btn">
+        Log In
+      </button>
+      <button class="dot-menu">
+        <img src="assets/icons/dot-menu.svg">
+      </button>
+    </div>
+  </header>
+  <!-- side-nav-left -->
+  <nav>
+
+    <div class="sec1">
+
+      <div class=sec1-content>
+        <img src="assets/icons/home.svg">
+        <p>
+          Home
+        </p>
+      </div>
+      <div class=sec1-content>
+        <img src="assets/icons/popular.svg">
+        <p>
+          Popular
+        </p>
+      </div>
+    </div>
+    <div class="sec2 menu-item">
+      <div class="sec2-content">
+        <div class="list-head item-1" id="topic-heading">
+          <p>TOPICS</p>
+          <img class="list-head-icon" src="assets/icons/drop-menu.svg">
+        </div>
+        <div class="dropdown-content sub-menu" id="topics-dropdown">
+          <div class="list-items submenu-items" id="internet-culture-head">
+            <img class="list-icon " src="assets/icons/internet-culture.svg">
+            <p>
+              Internet Culture
+            </p>
+            <img class="drop-menu-layout" src="assets/icons/drop-menu.svg">
+          </div>
+          <div class="sub-sub-menu" id="internet-culture-dropdown">
+            <a href="#" class="sub-sub-menu-item">Amazing</a>
+            <a href="#" class="sub-sub-menu-item">Animals & Pets</a>
+            <a href="#" class="sub-sub-menu-item">Cringe & Facepalm</a>
+            <a href="#" class="sub-sub-menu-item">Funny</a>
+            <a href="#" class="sub-sub-menu-item">Interesting</a>
+            <a href="#" class="sub-sub-menu-item">Memes</a>
+            <a href="#" class="sub-sub-menu-item">Oddly Satisfying</a>
+            <a href="#" class="sub-sub-menu-item">Reddit Meta</a>
+            <a href="#" class="sub-sub-menu-item">wholesome & Hearywarming</a>
+          </div>
+
+          <div class="list-items submenu-items" id="games-head">
+            <img class="list-icon" src="assets/icons/games.svg">
+            <p>
+              Games
+            </p>
+            <img class="drop-menu-layout" src="assets/icons/drop-menu.svg">
+          </div>
+          <div class="sub-sub-menu" id="games-dropdown">
+            <a href="#" class="sub-sub-menu-item">Action Games</a>
+            <a href="#" class="sub-sub-menu-item">Adventure Games</a>
+            <a href="#" class="sub-sub-menu-item">Esports</a>
+            <a href="#" class="sub-sub-menu-item">Gaming Console & Gear</a>
+            <a href="#" class="sub-sub-menu-item">Gaming News & Discussion</a>
+            <a href="#" class="sub-sub-menu-item">Mobile Games</a>
+            <a href="#" class="sub-sub-menu-item">Other Games</a>
+            <a href="#" class="sub-sub-menu-item">Role-Playing Games</a>
+            <a href="#" class="sub-sub-menu-item">Simulation Games</a>
+            <a href="#" class="sub-sub-menu-item">Sports & racing Games</a>
+            <a href="#" class="sub-sub-menu-item">Strategy Games</a>
+            <a href="#" class="sub-sub-menu-item">Tabletop Games</a>
+
+          </div>
+          <div class="list-items submenu-items" id="Q&As-head">
+            <img class="list-icon" src="assets/icons/qas.svg">
+            <p>
+              Q&As
+            </p>
+            <img class="drop-menu-layout" src="assets/icons/drop-menu.svg">
+          </div>
+          <div class="sub-sub-menu" id="QAs-dropdown">
+            <a href="#" class="sub-sub-menu-item">Q&As</a>
+            <a href="#" class="sub-sub-menu-item">Stories & Confession</a>
+          </div>
+
+          <div class="list-items submenu-items" id="technology-head">
+            <img class="list-icon" src="assets/icons/technology.svg">
+            <p>
+              Technology
+            </p>
+            <img class="drop-menu-layout" src="assets/icons/drop-menu.svg">
+          </div>
+          <div class="sub-sub-menu" id="technology-dropdown">
+            <a href="#" class="sub-sub-menu-item">3D Printing</a>
+            <a href="#" class="sub-sub-menu-item">Artificial Intellegence & Machine Learning</a>
+            <a href="#" class="sub-sub-menu-item">Computer & Hardware</a>
+            <a href="#" class="sub-sub-menu-item">Consumer Electronics</a>
+            <a href="#" class="sub-sub-menu-item">DIY Electronics</a>
+            <a href="#" class="sub-sub-menu-item">Programming</a>
+            <a href="#" class="sub-sub-menu-item">Software & Apps</a>
+            <a href="#" class="sub-sub-menu-item">Streaming Services</a>
+            <a href="#" class="sub-sub-menu-item">Tech News & Disscussions</a>
+            <a href="#" class="sub-sub-menu-item">Virtual & Aaugmented Reality</a>
+          </div>
+          <div class="list-items submenu-items" id="pop-head">
+            <img class="list-icon" src="assets/icons/pop-culture.svg">
+            <p>
+              Pop Culture
+            </p>
+            <img class="drop-menu-layout" src="assets/icons/drop-menu.svg">
+          </div>
+          <div class="sub-sub-menu" id="pop-dropdown">
+            <a href="#" class="sub-sub-menu-item">Celebrities</a>
+            <a href="#" class="sub-sub-menu-item">Creators & Influencers</a>
+            <a href="#" class="sub-sub-menu-item">Generations & Nostalgia</a>
+            <a href="#" class="sub-sub-menu-item">Podcast</a>
+            <a href="#" class="sub-sub-menu-item">Streamers</a>
+            <a href="#" class="sub-sub-menu-item">Tarot & Astrology</a>
+          </div>
+          <div class="list-items submenu-items" id="Movies-head">
+            <img class="list-icon" src="assets/icons/movies.svg">
+            <p>
+              Movies & TV
+            </p>
+            <img class="drop-menu-layout" src="assets/icons/drop-menu.svg">
+          </div>
+          <div class="sub-sub-menu" id="Movies-dropdown">
+            <a href="#" class="sub-sub-menu-item">Action Movies & Series</a>
+            <a href="#" class="sub-sub-menu-item">Animated Movies & Series</a>
+            <a href="#" class="sub-sub-menu-item">Comedy Movies & Series</a>
+            <a href="#" class="sub-sub-menu-item">Crime, Mystery, & Thriller Movies & Series</a>
+            <a href="#" class="sub-sub-menu-item">Doccumentary Movies & Series</a>
+            <a href="#" class="sub-sub-menu-item">Fantasy Movies & Series</a>
+            <a href="#" class="sub-sub-menu-item">Horror Movies & Series</a>
+            <a href="#" class="sub-sub-menu-item">Movie News & Discussion</a>
+            <a href="#" class="sub-sub-menu-item">Reality TV</a>
+            <a href="#" class="sub-sub-menu-item">Romance Movies & Series</a>
+            <a href="#" class="sub-sub-menu-item">SuperHero Movies & Series</a>
+            <a href="#" class="sub-sub-menu-item">TV News & Discussion</a>
+          </div>
+          <span id="seemore">
+            <div class="list-items-seemore">
+              <img class="list-icon" src="assets/icons/anime.svg">
+              <p>
+                Anime
+              </p>
+            </div>
+            <div class=list-items-seemore>
+              <img class="list-icon" src="assets/icons/arts.svg">
+              <p>
+                Arts
+              </p>
+            </div>
+            <div class=list-items-seemore>
+              <img class="list-icon" src="assets/icons/business.svg">
+              <p>
+                Business
+              </p>
+            </div>
+            <div class=list-items-seemore>
+              <img class="list-icon" src="assets/icons/collectibles.svg">
+              <p>
+                Collectibles & Other Hobbies
+              </p>
+            </div>
+            <div class=list-items-seemore>
+              <img class="list-icon" src="assets/icons/education.svg">
+              <p>
+                Education & Career
+              </p>
+            </div>
+            <div class=list-items-seemore>
+              <img class="list-icon" src="assets/icons/beauty.svg">
+              <p>
+                Fashion & Beauty
+              </p>
+            </div>
+            <div class=list-items-seemore>
+              <img class="list-icon" src="assets/icons/garden.svg">
+              <p>
+                Home & Garden
+              </p>
+            </div>
+            <div class=list-items-seemore>
+              <img class="list-icon" src="assets/icons/law.svg">
+              <p>
+                Humanities & Law
+              </p>
+            </div>
+            <div class=list-items-seemore>
+              <img class="list-icon" src="assets/icons/Music.svg">
+              <p>
+                Music
+              </p>
+            </div>
+            <div class=list-items-seemore>
+              <img class="list-icon" src="assets/icons/outdoors.svg">
+              <p>
+                Nature & Outdoors
+              </p>
+            </div>
+            <div class=list-items-seemore>
+              <img class="list-icon" src="assets/icons/news.svg">
+              <p>
+                News & Policies
+              </p>
+            </div>
+            <div class=list-items-seemore>
+              <img class="list-icon" src="assets/icons/travels.svg">
+              <p>
+                Places & Travels
+              </p>
+            </div>
+            <div class=list-items-seemore>
+              <img class="list-icon" src="assets/icons/science.svg">
+              <p>
+                Science
+              </p>
+            </div>
+            <div class=list-items-seemore>
+              <img class="list-icon" src="assets/icons/sports.svg">
+              <p>
+                Sports
+              </p>
+            </div>
+            <div class=list-items-seemore>
+              <img class="list-icon" src="assets/icons/spooky.svg">
+              <p>
+                Spooky
+              </p>
+            </div>
+            <div class=list-items-seemore>
+              <img class="list-icon" src="assets/icons/vehicles.svg">
+              <p>
+                vehicles
+              </p>
+            </div>
+            <div class=list-items-seemore>
+              <img class="list-icon" src="assets/icons/wellness.svg">
+              <p>
+                Wellness
+              </p>
+            </div>
+          </span>
+
+          <!-- see more Button -->
+          <div>
+            <button id="more-content">See More</button>
+          </div>
+        </div>
+
+
+
+      </div>
+
+    </div>
+    <div class="sec3 menu-item" style="border:none">
+      <div class="sec3-content">
+        <div class="list-head item-2" id="resources-heading">
+          <p>RESOURCES</p>
+          <img class="list-head-icon" src="assets/icons/drop-menu.svg">
+        </div>
+        <div class="dropdown-content sub-menu" id="resource-dropdown">
+          <span>
+            <div class="list-items submenu-items">
+              <img class="list-icon" src="assets/icons/about.svg">
+              <p>
+                About Reddit
+              </p>
+            </div>
+            <div class="list-items submenu-items">
+              <img class="list-icon" src="assets/icons/advertise.svg">
+              <p>
+                Advertise
+              </p>
+            </div>
+            <div class="list-items submenu-items">
+              <img class="list-icon" src="assets/icons/Help.svg">
+              <p>
+                Help
+              </p>
+            </div>
+            <div class="list-items submenu-items">
+              <img class="list-icon" src="assets/icons/Blog.svg">
+              <p>
+                Blog
+              </p>
+            </div>
+            <div class="list-items submenu-items">
+              <img class="list-icon" src="assets/icons/Careers.svg">
+              <p>
+                Careers
+              </p>
+            </div>
+            <div class="list-items submenu-items">
+              <img class="list-icon" src="assets/icons/press.svg">
+              <p>
+                Press
+              </p>
+            </div>
+
+          </span>
+          <span>
+            <div class="list-items submenu-items">
+              <img class="list-icon" src="assets/icons/communities.svg">
+              <p>
+                Communities
+              </p>
+            </div>
+            <div class="list-items submenu-items">
+              <img class="list-icon" src="assets/icons/BOR.svg">
+              <p>
+                Best of Reddit
+              </p>
+            </div>
+            <div class="list-items submenu-items">
+              <img class="list-icon" src="assets/icons/topics.svg">
+              <p>
+                Topics
+              </p>
+            </div>
+          </span>
+          <span style="border:none">
+            <div class="list-items submenu-items">
+              <img class="list-icon" src="assets/icons/Policy.svg">
+              <p>
+                Content Policy
+              </p>
+            </div>
+            <div class="list-items submenu-items">
+              <img class="list-icon" src="assets/icons/privacy.svg">
+              <p>
+                Privacy Policy
+              </p>
+            </div>
+            <div class="list-items submenu-items">
+              <img class="list-icon" src="assets/icons/Agreement.svg">
+              <p>
+                User Agreement
+              </p>
+            </div>
+          </span>
+
+        </div>
+
+
+
+      </div>
+    </div>
+    <div class="sec4" id="sec4id">
+
+      Reddit, Inc. 2024. All rights reseved
+    </div>
+
+  </nav>
+  <!-- main contentdiv -->
+  <div class="main-container">
+    <!-- Slider-------------------------------------------------------------------------------------------------------------- -->
+    <div class="Slider-wrapper">
+      <button id="left" class="arrowIcons">
+        <img src="assets/icons/arrowleft.svg">
+      </button>
+      <diV class="card-list">
+
+        <div class="card-item">
+          <img src="assets/images/olympics.jpg">
+          <span class="overlay1"></span>
+          <div class="overlay2">
+            <p>
+              <span class="head1">Olympics Day 12</span>
+              <span class="head2"> Olympics Day Twelve MegaThread wed...</span>
+            </p>
+            <div class="bottom-card">
+              <img src="assets/images/profile-1.jpg">
+              <p>
+                r/olympics <span class="and-more">add more</span>
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="card-item">
+          <img src="assets/images/science.jpg">
+          <span class="overlay1"></span>
+          <div class="overlay2">
+            <p>
+              <span class="head1">India-EU Collaboration</span>
+              <span class="head2"> Key new innovative technologies resul...</span>
+            </p>
+            <div class="bottom-card">
+              <img src="assets/images/profile-2.jpg">
+              <p>
+                r/research <span class="and-more">add more</span>
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="card-item">
+          <img src="assets/images/Boilers.jpg">
+          <span class="overlay1"></span>
+          <div class="overlay2">
+            <p>
+              <span class="head1">OBoilers Bill 2024</span>
+              <span class="head2">On 2nd August 2024, the Union Cabine...</span>
+            </p>
+            <div class="bottom-card">
+              <img src="assets/images/profile-3.jpg">
+              <p>
+                r/law <span class="and-more">add more</span>
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="card-item">
+          <img src="assets/images/volley ball.jpg">
+          <span class="overlay1"></span>
+          <div class="overlay2">
+            <p>
+              <span class="head1">Women’s Volleyball League</span>
+              <span class="head2"> India won second title in CAVA Wome......</span>
+            </p>
+            <div class="bottom-card">
+              <img src="assets/images/profile-4.jpg">
+              <p>
+                r/sports <span class="and-more">add more</span>
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="card-item">
+          <img src="assets/images/president.jpg">
+          <span class="overlay1"></span>
+          <div class="overlay2">
+            <p>
+              <span class="head1">President Droupadi Murmu in Fiji</span>
+              <span class="head2"> ndian President’s 2days state visit Fij...</span>
+            </p>
+            <div class="bottom-card">
+              <img src="assets/images/profile-5.jpg">
+              <p>
+                r/governance <span class="and-more">add more</span>
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="card-item">
+          <img src="assets/images/environment.jpg">
+          <span class="overlay1"></span>
+          <div class="overlay2">
+            <p>
+              <span class="head1">New Peacock Santuary in Karnataka</span>
+              <span class="head2"> Karnataka Government anounces ne....</span>
+            </p>
+            <div class="bottom-card">
+              <img src="assets/images/profile-6.jpg">
+              <p>
+                r/nature <span class="and-more">add more</span>
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="card-item">
+          <img src="assets/images/vinesh phogat.jpg">
+          <span class="overlay1"></span>
+          <div class="overlay2">
+            <p>
+              <span class="head1">Vinesh Phogat retires</span>
+              <span class="head2"> Vinesh Phogat Retires after playing las...</span>
+            </p>
+            <div class="bottom-card">
+              <img src="assets/images/profile-7.png">
+              <p>
+                r/olympics <span class="and-more">add more</span>
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="card-item">
+          <img src="assets/images/navy.jpg">
+          <span class="overlay1"></span>
+          <div class="overlay2">
+            <p>
+              <span class="head1">INS conducted Partnership</span>
+              <span class="head2"> INS Tabar conducted Maritime Partne.....
+
+              </span>
+            </p>
+            <div class="bottom-card">
+              <img src="assets/images/profile-8.jpg">
+              <p>
+                r/defence <span class="and-more">add more</span>
+              </p>
+            </div>
+          </div>
+        </div>
+
+      </diV>
+      <button id="right" class="arrowIcons">
+        <img src="assets/icons/arrowright.svg">
+      </button>
+
+    </div>
+    <!-- feeeeeed container community------------------------------------------------------------------------------------------- -->
+
+    <div class="feedndcommunity">
+      <div class="feed-container">
+        <div class="filter-view-bar">
+          <div class="sortbylist">
+            <button id="hot-sort-btn">
+              <p>HOT </p>
+              <img src="assets/icons/drop2-menu.svg">
+            </button>
+            <div class="sort-items" id="hot-sort">
+              <h6>Sort By</h6>
+              <li>Best</li>
+              <li>New</li>
+              <li>Top</li>
+              <li>Hot</li>
+            </div>
+          </div>
+          <div class="sortbylist">
+            <button id="time-sort-btn">
+              <p>Time</p>
+              <img src="assets/icons/drop2-menu.svg">
+            </button>
+            <div class="sort-items" id="time-sort">
+              <h6>Sort By</h6>
+              <li>Now</li>
+              <li>This Week</li>
+              <li>This Month</li>
+              <li>This Year</li>
+              <li>All time</li>
+            </div>
+          </div>
+          <div class="sortbylist">
+            <button id="country-sort-btn">
+              <p>Country</p>
+              <img src="assets/icons/drop2-menu.svg">
+            </button>
+            <div class="sort-items" id="sort-country">
+              <h6>Sort By</h6>
+              <li>Everywhere</li>
+
+              <li>America</li>
+              <li>Australia</li>
+              <li>Bulgaria</li>
+              <li>Canada</li>
+              <li>Chile</li>
+              <li>Colombia</li>
+              <li>Czech Republic</li>
+              <li>Finland</li>
+              <li>France</li>
+              <li>Germany</li>
+              <li>Greece</li>
+              <li>Hungary</li>
+              <li>Iceland</li>
+              <li>India</li>
+              <li>Ireland</li>
+              <li>Italy</li>
+              <li>Japan</li>
+              <li>Malaysia</li>
+              <li>Mexico</li>
+              <li>New Zealand</li>
+              <li>Philippines</li>
+              <li>Poland</li>
+              <li>Portugal</li>
+              <li>Puerto Rico</li>
+              <li>Romania</li>
+              <li>Serbia</li>
+              <li>Singapore</li>
+              <li>Spain</li>
+              <li>Swedan</li>
+              <li>Taiwan</li>
+              <li>Thailand</li>
+              <li>Turkey</li>
+              <li>United Kingdom</li>
+              <li>United States</li>
+
+            </div>
+          </div>
+          <div class="layoutlist">
+            <button id="layout-sort-btn">
+              <img src="assets/icons/viewlayout.svg">
+              <img src="assets/icons/drop2-menu.svg">
+            </button>
+            <div class="layout-items" id="layout-sort">
+              <h6>View</h6>
+              <div class="display-layout-items">
+                <div class="inner-display-layout">
+                  <img src="assets/icons/viewlayout.svg">
+                  <li>Card</li>
+                </div>
+                <div class="inner-display-layout">
+                  <img src="assets/icons/compactlayout.svg">
+                  <li>Compact</li>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="feed">
+          <div class="post-item">
+            <div class="post-head-bar">
+              <div class="post-left-section">
+                <img src="assets/images/profile-1.jpg">
+                <p>
+                  r/indiasocial <span class="posted-time"> <span
+                      style="font-weight: 800; font-size:medium;">&#183;</span> 5 hours ago </span>
+                </p>
+
+              </div>
+              <div class="post-right-section">
+                <button>
+                  Join
+                </button>
+                <img src="assets/icons/dot-menu.svg">
+              </div>
+            </div>
+            <div class="post-title">
+              Attempted murder on Indian student in Uppsala(Sweden)
+            </div>
+            <div class="post-content">
+              <p>
+                My brother, who is currently pursuing his master's degree from Uppsala University in Sweden, was
+                attacked on his way back to his dorm room last night. He was struck on the head multiple times with a
+                blunt weapon, suffered heavy blood loss, has 7 stitches in the middle of the head(above the parietal
+                bone). The attacker left him to die on the roadside, but somehow he regained consciousness and made his
+                way to safety....
+              </p>
+            </div>
+            <div class="post-footer">
+
+              <div class="likeunlike">
+                <span class=" path2"><svg xmlns="http://www.w3.org/2000/svg" width="1.2em" height="1.2em"
+                    viewBox="0 0 48 48">
+                    <path class="path1" fill="white" stroke="white" stroke-linecap="round" stroke-linejoin="round"
+                      stroke-width="1.6" d="M5 24L24 6l19 18H31v18H17V24z" />
+                  </svg>
+                </span>
+                <p>129</p>
+                <span class="path1">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="1.2em" height="1.2em" viewBox="0 0 48 48">
+                    <path fill="white" stroke="white" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.6"
+                      d="m5 24l19 18l19-18H31V6H17v18z" />
+                  </svg>
+                </span>
+              </div>
+
+
+
+              <button class="comment">
+                <img src="assets/icons/comment.svg">
+                <p>12.72K</p>
+              </button>
+              <button class="award">
+                <img src="assets/icons/award.svg">
+              </button>
+              <button class="share">
+                <img src="assets/icons/share.svg">
+                <h5>SHARE</h5>
+              </button>
+            </div>
+
+          </div>
+          <div class="post-item">
+            <div class="post-head-bar">
+              <div class="post-left-section">
+                <img src="assets/images/profile-1.jpg">
+                <p>
+                  r/indiasocial <span class="posted-time"> <span
+                      style="font-weight: 800; font-size:medium;">&#183;</span> 5 hours ago </span>
+                </p>
+
+              </div>
+              <div class="post-right-section">
+                <button>
+                  Join
+                </button>
+                <img src="assets/icons/dot-menu.svg">
+              </div>
+            </div>
+            <div class="post-title">
+              A plane with 62 passengers aboard just fell in Vinhedo - Brazil
+            </div>
+            <div class="post-content">
+              <video autoplay>
+                <source src="assets/post/m2-res_640p.mp4" type="video/mp4">
+              </video>
+
+            </div>
+            <div class="post-footer">
+
+              <div class="likeunlike">
+                <span class=" path2"><svg xmlns="http://www.w3.org/2000/svg" width="1.2em" height="1.2em"
+                    viewBox="0 0 48 48">
+                    <path class="path1" fill="white" stroke="white" stroke-linecap="round" stroke-linejoin="round"
+                      stroke-width="1.6" d="M5 24L24 6l19 18H31v18H17V24z" />
+                  </svg>
+                </span>
+                <p>129</p>
+                <span class="path1">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="1.2em" height="1.2em" viewBox="0 0 48 48">
+                    <path fill="white" stroke="white" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.6"
+                      d="m5 24l19 18l19-18H31V6H17v18z" />
+                  </svg>
+                </span>
+              </div>
+
+
+
+              <button class="comment">
+                <img src="assets/icons/comment.svg">
+                <p>12.72K</p>
+              </button>
+              <button class="award">
+                <img src="assets/icons/award.svg">
+              </button>
+              <button class="share">
+                <img src="assets/icons/share.svg">
+                <h5>SHARE</h5>
+              </button>
+            </div>
+
+          </div>
+
+
+
+          <div class="post-item">
+            <div class="post-head-bar">
+              <div class="post-left-section">
+                <img src="assets/images/profile-1.jpg">
+                <p>
+                  r/india
+
+                  <span class="posted-time"> <span style="font-weight: 800; font-size:medium;">&#183;</span> 6 hr. ago
+                  </span>
+                </p>
+
+              </div>
+              <div class="post-right-section">
+                <button>
+                  Join
+                </button>
+                <img src="assets/icons/dot-menu.svg">
+              </div>
+            </div>
+            <div class="post-title">
+              Aman Sehrawat wins Men's Freestyle 57 kg Wrestling Bronze. 6th Medal for India at Olympics 2024
+            </div>
+            <div class="post-content">
+              <p>
+                <img src="assets/post/aman-sehrawat-wins-mens-freestyle-57-kg-wrestling-bronze-v0-sjrd4bk4fohd1.webp">
+              </p>
+            </div>
+            <div class="post-footer">
+
+              <div class="likeunlike">
+                <span class=" path2"><svg xmlns="http://www.w3.org/2000/svg" width="1.2em" height="1.2em"
+                    viewBox="0 0 48 48">
+                    <path class="path1" fill="white" stroke="white" stroke-linecap="round" stroke-linejoin="round"
+                      stroke-width="1.6" d="M5 24L24 6l19 18H31v18H17V24z" />
+                  </svg>
+                </span>
+                <p>129</p>
+                <span class="path1">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="1.2em" height="1.2em" viewBox="0 0 48 48">
+                    <path fill="white" stroke="white" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.6"
+                      d="m5 24l19 18l19-18H31V6H17v18z" />
+                  </svg>
+                </span>
+              </div>
+
+
+
+              <button class="comment">
+                <img src="assets/icons/comment.svg">
+                <p>12.72K</p>
+              </button>
+              <button class="award">
+                <img src="assets/icons/award.svg">
+              </button>
+              <button class="share">
+                <img src="assets/icons/share.svg">
+                <h5>SHARE</h5>
+              </button>
+            </div>
+
+          </div>
+
+
+
+
+
+
+          <div class="post-item">
+            <div class="post-head-bar">
+              <div class="post-left-section">
+                <img src="assets/images/profile-1.jpg">
+                <p>
+                  r/indiasocial <span class="posted-time"> <span
+                      style="font-weight: 800; font-size:medium;">&#183;</span> 5 hours ago </span>
+                </p>
+
+              </div>
+              <div class="post-right-section">
+                <button>
+                  Join
+                </button>
+                <img src="assets/icons/dot-menu.svg">
+              </div>
+            </div>
+            <div class="post-title">
+              Attempted murder on Indian student in Uppsala(Sweden)
+            </div>
+            <div class="post-content">
+              <p>
+                My brother, who is currently pursuing his master's degree from Uppsala University in Sweden, was
+                attacked on his way back to his dorm room last night. He was struck on the head multiple times with a
+                blunt weapon, suffered heavy blood loss, has 7 stitches in the middle of the head(above the parietal
+                bone). The attacker left him to die on the roadside, but somehow he regained consciousness and made his
+                way to safety....
+              </p>
+            </div>
+            <div class="post-footer">
+
+              <div class="likeunlike">
+                <span class=" path2"><svg xmlns="http://www.w3.org/2000/svg" width="1.2em" height="1.2em"
+                    viewBox="0 0 48 48">
+                    <path class="path1" fill="white" stroke="white" stroke-linecap="round" stroke-linejoin="round"
+                      stroke-width="1.6" d="M5 24L24 6l19 18H31v18H17V24z" />
+                  </svg>
+                </span>
+                <p>129</p>
+                <span class="path1">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="1.2em" height="1.2em" viewBox="0 0 48 48">
+                    <path fill="white" stroke="white" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.6"
+                      d="m5 24l19 18l19-18H31V6H17v18z" />
+                  </svg>
+                </span>
+              </div>
+
+
+
+              <button class="comment">
+                <img src="assets/icons/comment.svg">
+                <p>12.72K</p>
+              </button>
+              <button class="award">
+                <img src="assets/icons/award.svg">
+              </button>
+              <button class="share">
+                <img src="assets/icons/share.svg">
+                <h5>SHARE</h5>
+              </button>
+            </div>
+
+          </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+          <div class="post-item">
+            <div class="post-head-bar">
+              <div class="post-left-section">
+                <img src="assets/images/profile-1.jpg">
+                <p>
+                  r/indiasocial <span class="posted-time"> <span
+                      style="font-weight: 800; font-size:medium;">&#183;</span> 5 hours ago </span>
+                </p>
+
+              </div>
+              <div class="post-right-section">
+                <button>
+                  Join
+                </button>
+                <img src="assets/icons/dot-menu.svg">
+              </div>
+            </div>
+            <div class="post-title">
+              Attempted murder on Indian student in Uppsala(Sweden)
+            </div>
+            <div class="post-content">
+              <p>
+                My brother, who is currently pursuing his master's degree from Uppsala University in Sweden, was
+                attacked on his way back to his dorm room last night. He was struck on the head multiple times with a
+                blunt weapon, suffered heavy blood loss, has 7 stitches in the middle of the head(above the parietal
+                bone). The attacker left him to die on the roadside, but somehow he regained consciousness and made his
+                way to safety....
+              </p>
+            </div>
+            <div class="post-footer">
+
+              <div class="likeunlike">
+                <span class=" path2"><svg xmlns="http://www.w3.org/2000/svg" width="1.2em" height="1.2em"
+                    viewBox="0 0 48 48">
+                    <path class="path1" fill="white" stroke="white" stroke-linecap="round" stroke-linejoin="round"
+                      stroke-width="1.6" d="M5 24L24 6l19 18H31v18H17V24z" />
+                  </svg>
+                </span>
+                <p>129</p>
+                <span class="path1">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="1.2em" height="1.2em" viewBox="0 0 48 48">
+                    <path fill="white" stroke="white" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.6"
+                      d="m5 24l19 18l19-18H31V6H17v18z" />
+                  </svg>
+                </span>
+              </div>
+
+
+
+              <button class="comment">
+                <img src="assets/icons/comment.svg">
+                <p>12.72K</p>
+              </button>
+              <button class="award">
+                <img src="assets/icons/award.svg">
+              </button>
+              <button class="share">
+                <img src="assets/icons/share.svg">
+                <h5>SHARE</h5>
+              </button>
+            </div>
+
+          </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+          <div class="post-item">
+            <div class="post-head-bar">
+              <div class="post-left-section">
+                <img src="assets/images/profile-1.jpg">
+                <p>
+                  r/indiasocial <span class="posted-time"> <span
+                      style="font-weight: 800; font-size:medium;">&#183;</span> 5 hours ago </span>
+                </p>
+
+              </div>
+              <div class="post-right-section">
+                <button>
+                  Join
+                </button>
+                <img src="assets/icons/dot-menu.svg">
+              </div>
+            </div>
+            <div class="post-title">
+              Attempted murder on Indian student in Uppsala(Sweden)
+            </div>
+            <div class="post-content">
+              <p>
+                My brother, who is currently pursuing his master's degree from Uppsala University in Sweden, was
+                attacked on his way back to his dorm room last night. He was struck on the head multiple times with a
+                blunt weapon, suffered heavy blood loss, has 7 stitches in the middle of the head(above the parietal
+                bone). The attacker left him to die on the roadside, but somehow he regained consciousness and made his
+                way to safety....
+              </p>
+            </div>
+            <div class="post-footer">
+
+              <div class="likeunlike">
+                <span class=" path2"><svg xmlns="http://www.w3.org/2000/svg" width="1.2em" height="1.2em"
+                    viewBox="0 0 48 48">
+                    <path class="path1" fill="white" stroke="white" stroke-linecap="round" stroke-linejoin="round"
+                      stroke-width="1.6" d="M5 24L24 6l19 18H31v18H17V24z" />
+                  </svg>
+                </span>
+                <p>129</p>
+                <span class="path1">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="1.2em" height="1.2em" viewBox="0 0 48 48">
+                    <path fill="white" stroke="white" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.6"
+                      d="m5 24l19 18l19-18H31V6H17v18z" />
+                  </svg>
+                </span>
+              </div>
+
+
+
+              <button class="comment">
+                <img src="assets/icons/comment.svg">
+                <p>12.72K</p>
+              </button>
+              <button class="award">
+                <img src="assets/icons/award.svg">
+              </button>
+              <button class="share">
+                <img src="assets/icons/share.svg">
+                <h5>SHARE</h5>
+              </button>
+            </div>
+
+          </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+          <div class="post-item">
+            <div class="post-head-bar">
+              <div class="post-left-section">
+                <img src="assets/images/profile-1.jpg">
+                <p>
+                  r/indiasocial <span class="posted-time"> <span
+                      style="font-weight: 800; font-size:medium;">&#183;</span> 5 hours ago </span>
+                </p>
+
+              </div>
+              <div class="post-right-section">
+                <button>
+                  Join
+                </button>
+                <img src="assets/icons/dot-menu.svg">
+              </div>
+            </div>
+            <div class="post-title">
+              Attempted murder on Indian student in Uppsala(Sweden)
+            </div>
+            <div class="post-content">
+              <p>
+                My brother, who is currently pursuing his master's degree from Uppsala University in Sweden, was
+                attacked on his way back to his dorm room last night. He was struck on the head multiple times with a
+                blunt weapon, suffered heavy blood loss, has 7 stitches in the middle of the head(above the parietal
+                bone). The attacker left him to die on the roadside, but somehow he regained consciousness and made his
+                way to safety....
+              </p>
+            </div>
+            <div class="post-footer">
+
+              <div class="likeunlike">
+                <span class=" path2"><svg xmlns="http://www.w3.org/2000/svg" width="1.2em" height="1.2em"
+                    viewBox="0 0 48 48">
+                    <path class="path1" fill="white" stroke="white" stroke-linecap="round" stroke-linejoin="round"
+                      stroke-width="1.6" d="M5 24L24 6l19 18H31v18H17V24z" />
+                  </svg>
+                </span>
+                <p>129</p>
+                <span class="path1">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="1.2em" height="1.2em" viewBox="0 0 48 48">
+                    <path fill="white" stroke="white" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.6"
+                      d="m5 24l19 18l19-18H31V6H17v18z" />
+                  </svg>
+                </span>
+              </div>
+
+
+
+              <button class="comment">
+                <img src="assets/icons/comment.svg">
+                <p>12.72K</p>
+              </button>
+              <button class="award">
+                <img src="assets/icons/award.svg">
+              </button>
+              <button class="share">
+                <img src="assets/icons/share.svg">
+                <h5>SHARE</h5>
+              </button>
+            </div>
+
+          </div>
+        </div>
+      </div>
+      <div class="community-relative-container">
+        <div class="popular-community-div">
+          <h3>POPULAR COMMUNITIES</h3>
+
+          <div class="entry">
+            <img src="assets/images/profile-1.jpg">
+            <p>
+              <span class="p-name">r/AskReddit</span>
+              <span class="p-member">47,676,638 members</span>
+            </p>
+          </div>
+          <div class="entry">
+            <img src="assets/images/profile-2.jpg">
+            <p>
+              <span class="p-name">r/leagueoflegends</span>
+              <span class="p-member">77,676,638 members</span>
+            </p>
+          </div>
+          <div class="entry">
+            <img src="assets/images/profile-3.jpg">
+            <p>
+              <span class="p-name">r/OutOfTheLoop</span>
+              <span class="p-member">33,876,638 members</span>
+            </p>
+          </div>
+          <div class="entry">
+            <img src="assets/images/profile-4.jpg">
+            <p>
+              <span class="p-name">r/discirdapp</span>
+              <span class="p-member">7,676,638 members</span>
+            </p>
+          </div>
+          <div class="entry">
+            <img src="assets/images/profile-5.jpg">
+            <p>
+              <span class="p-name">r/Twitch</span>
+              <span class="p-member">2,606,639 members</span>
+            </p>
+          </div>
+          <!-- see more span -->
+          <span id="seeMore-span">
+            <div class="entry">
+              <img src="assets/images/profile-7.png">
+              <p>
+                <span class="p-name">r/AskReddit</span>
+                <span class="p-member">47,676,638 members</span>
+              </p>
+            </div>
+            <div class="entry">
+              <img src="assets/images/profile-4.jpg">
+              <p>
+                <span class="p-name">r/NoStupidQuestions</span>
+                <span class="p-member">4,867,638 members</span>
+              </p>
+            </div>
+            <div class="entry">
+              <img src="assets/images/profile-6.jpg">
+              <p>
+                <span class="p-name">r/Minecraft</span>
+                <span class="p-member">11,676,058 members</span>
+              </p>
+            </div>
+            <div class="entry">
+              <img src="assets/images/profile-5.jpg">
+              <p>
+                <span class="p-name">r/DnD</span>
+                <span class="p-member">676,638 members</span>
+              </p>
+            </div>
+            <div class="entry">
+              <img src="assets/images/profile-8.jpg">
+              <p>
+                <span class="p-name">r/wow</span>
+                <span class="p-member">47,638 members</span>
+              </p>
+            </div>
+            <div class="entry">
+              <img src="assets/images/profile-1.jpg">
+              <p>
+                <span class="p-name">r/stream</span>
+                <span class="p-member">47,676,638 members</span>
+              </p>
+            </div>
+            <div class="entry">
+              <img src="assets/images/profile-1.jpg">
+              <p>
+                <span class="p-name">r/AskReddit</span>
+                <span class="p-member">47,676,638 members</span>
+              </p>
+            </div>
+            <div class="entry">
+              <img src="assets/images/profile-2.jpg">
+              <p>
+                <span class="p-name">r/leagueoflegends</span>
+                <span class="p-member">77,676,638 members</span>
+              </p>
+            </div>
+            <div class="entry">
+              <img src="assets/images/profile-3.jpg">
+              <p>
+                <span class="p-name">r/OutOfTheLoop</span>
+                <span class="p-member">33,876,638 members</span>
+              </p>
+            </div>
+          </span>
+          <div>
+            <button id="see-more-button-span">See More</button>
+          </div>
+        </div>
+
+
+      </div>
+    </div>
+
+
+
+  </div>
+
+
+
+  </div>
+
+  <script src="menu.js"></script>
+  <script src="slider.js"></script>
+
+</body>
+
+</html>
